@@ -39,7 +39,8 @@ defmodule ElixirDgraphExample.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 2.1", override: true},
-      {:ex_dgraph, path: "../exdgraph/"}
+      {:ex_dgraph, path: "../exdgraph/"},
+      {:cowlib, github: "ninenines/cowlib", tag: "2.4.0", override: true}
     ]
   end
 end
