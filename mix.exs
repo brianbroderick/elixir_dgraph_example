@@ -40,7 +40,10 @@ defmodule ElixirDgraphExample.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 2.1", override: true},
       {:ex_dgraph, path: "../exdgraph/"},
-      {:cowlib, github: "ninenines/cowlib", tag: "2.4.0", override: true}
+      {:cowlib, github: "ninenines/cowlib", tag: "2.4.0", override: true},
+      {:grpc, github: "tony612/grpc-elixir", override: true},
+      {:gun, github: "ninenines/gun", tag: "1.0.0-rc.1", override: true}
+
     ]
   end
 end
