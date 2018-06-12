@@ -9,6 +9,7 @@ defmodule ElixirDgraphExample.Application do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
+      {ExDgraph, Application.get_env(:ex_dgraph, ExDgraph)},
       supervisor(ElixirDgraphExampleWeb.Endpoint, []),
       # Start your own worker by calling: ElixirDgraphExample.Worker.start_link(arg1, arg2, arg3)
       # worker(ElixirDgraphExample.Worker, [arg1, arg2, arg3]),
